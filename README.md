@@ -1,87 +1,55 @@
-# RAG Learning Project
+# RAG Learning
 
-This project demonstrates various concepts of RAG (Retrieval-Augmented Generation) using LlamaIndex.
+This repository contains examples and Jupyter notebooks for learning Retrieval-Augmented Generation (RAG) using LlamaIndex.
 
-## Setup
+## Getting Started
 
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/donniv86/rag-learning.git
+   cd rag-learning
+   ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+2. Set up a virtual environment and install dependencies:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-3. Create a `.env` file in the root directory with your OpenAI API key:
-```
-OPENAI_API_KEY=your_api_key_here
-```
+3. Set your OpenAI API key in a `.env` file in the root directory:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
-## Examples
+## Jupyter Notebooks for Hands-On Learning
 
-### 1. Loading Examples
-The `loading_examples` directory contains examples demonstrating different ways to load data in LlamaIndex:
+The repository includes the following Jupyter notebooks for interactive learning:
 
-1. `loading_basics.py`: Shows three different ways to load data:
-   - Creating documents from text directly
-   - Loading documents from files
-   - Parsing documents into nodes
+- **indexing_basics.ipynb**: Learn basic indexing techniques with LlamaIndex.
+- **multi_modal_examples.ipynb**: Explore indexing and querying text, PDF, and image files.
+- **embedding_techniques.ipynb**: Understand different embedding models and their characteristics.
 
-### 2. Indexing Examples
-The `indexing_examples` directory contains examples demonstrating different indexing strategies:
+### How to Use the Notebooks
 
-1. `indexing_basics.py`: Shows three different indexing approaches:
-   - Basic indexing with default settings
-   - Custom node parsing with metadata
-   - Indexing with custom metadata and filtering
+1. Start JupyterLab or Jupyter Notebook:
+   ```bash
+   jupyter lab
+   # or
+   jupyter notebook
+   ```
 
-## What You'll Learn
+2. Open the desired notebook and run each cell interactively to see the results and experiment with the code.
 
-### Loading Stage
-1. **Basic Document Creation**
-   - How to create Document objects from text
-   - How to build a simple index
-   - How to query the index
+## Additional Resources
 
-2. **Loading from Files**
-   - How to load data from text files
-   - Using SimpleDirectoryReader
-   - Creating and querying an index from file data
+- [LlamaIndex Documentation](https://docs.llama-index.ai/)
+- [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
 
-3. **Node Parsing**
-   - How to split documents into nodes
-   - Understanding node structure
-   - Working with node metadata
+## Contributing
 
-### Indexing Stage
-1. **Basic Indexing**
-   - Creating vector indices from documents
-   - Default indexing behavior
-   - Simple querying
+Feel free to submit issues, fork the repository, and create pull requests for any improvements.
 
-2. **Custom Node Parsing**
-   - Configuring chunk size and overlap
-   - Custom separators
-   - Node metadata management
+## License
 
-3. **Metadata Indexing**
-   - Adding custom metadata to documents
-   - Using metadata for filtering
-   - Different metadata modes
-
-## Running the Examples
-
-To run the loading examples:
-```bash
-cd loading_examples
-python loading_basics.py
-```
-
-To run the indexing examples:
-```bash
-cd indexing_examples
-python indexing_basics.py
-```
+This project is licensed under the MIT License - see the LICENSE file for details.
